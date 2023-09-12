@@ -2,12 +2,28 @@
 
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) {
+    header {
+        #logo {
+            max-width: 60%;
+        }
+    }
 
+    section {
+        .badge-sulawe {
+            &::before {
+                left: -20px;
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
-
+    header {
+        #logo {
+            max-width: 30%;
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)

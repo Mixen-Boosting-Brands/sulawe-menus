@@ -5,3 +5,92 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import '../node_modules/@fortawesome/fontawesome-free/scss/regular';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/brands';
+
+
+// Títulos
+@font-face {
+    font-family: 'flatlinebold';
+    src: url('../fonts/up_up_creative_-_flatline_bold-webfont.woff2') format('woff2'),
+         url('../fonts/up_up_creative_-_flatline_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'flatlinebold-italic';
+    src: url('../fonts/up_up_creative_-_flatline_bold-italic-webfont.woff2') format('woff2'),
+         url('../fonts/up_up_creative_-_flatline_bold-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+@font-face {
+    font-family: 'flatlinesemibold';
+    src: url('../fonts/up_up_creative_-_flatline_semibold-webfont.woff2') format('woff2'),
+         url('../fonts/up_up_creative_-_flatline_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'flatlinesemibold-italic';
+    src: url('../fonts/up_up_creative_-_flatline_semibold-italic-webfont.woff2') format('woff2'),
+         url('../fonts/up_up_creative_-_flatline_semibold-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+@font-face {
+    font-family: 'flatlineregular';
+    src: url('../fonts/up_up_creative_-_flatline_regular-webfont.woff2') format('woff2'),
+         url('../fonts/up_up_creative_-_flatline_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'flatlineregular-italic';
+    src: url('../fonts/up_up_creative_-_flatline_regular-italic-webfont.woff2') format('woff2'),
+         url('../fonts/up_up_creative_-_flatline_regular-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+// Textos regulares
+@font-face {
+    font-family: 'moderatcondensedregular';
+    src: url('../fonts/Moderat-Condensed-Regular.woff2') format('woff2'),
+         url('../fonts/Moderat-Condensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'moderatcondensedmedium';
+    src: url('../fonts/Moderat-Condensed-Medium.woff2') format('woff2'),
+         url('../fonts/Moderat-Condensed-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'moderatcondensedlight';
+    src: url('../fonts/Moderat-Condensed-Light.woff2') format('woff2'),
+         url('../fonts/Moderat-Condensed-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'moderatcondensedthin';
+    src: url('../fonts/Moderat-Condensed-Thin.woff2') format('woff2'),
+         url('../fonts/Moderat-Condensed-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

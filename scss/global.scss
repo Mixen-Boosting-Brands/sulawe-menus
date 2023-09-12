@@ -6,6 +6,7 @@ body {
 }
 
 body {
+    font-family: 'moderatcondensedlight', sans-serif;
     position: relative;
 }
 
@@ -21,6 +22,7 @@ footer {
 }
 
 a {
+    color: #000;
     text-decoration: none;
     @include transition(ease, 0.3s);
 }
@@ -49,55 +51,98 @@ a {
     padding-bottom: 30px;
 }
 
-.whatsapp {
-    @include whatsapp-button;
+hr {
+    opacity: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'flatlineregular', sans-serif;
+    text-transform: uppercase;
 }
 
 header {
-    width: 100%;
-    height: auto;
-    padding: 15px 30px;
-    // color: ;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
+    padding: 30px 0;
+    margin-bottom: 60px;
     @include transition(ease, 0.2s);
 
-    #logo-navbar {
-        width: 100px;
-        @include transition(ease, 0.2s);
+    #logo {
+        max-width: 80%;
+    }
+}
+
+section {
+    margin: 30px 0;
+
+    h1 {
+        letter-spacing: 0.8rem;
     }
 
-    #mburger {
-        // color: ;
+    .table-responsive {
+        overflow-x: visible;
+    }
 
-        &:hover,
-        &:focus {
-            // color: ;
+    p {
+        margin-bottom: 0;
+    }
+
+    .bold {
+        font-family: 'moderatcondensedregular', sans-serif;
+    }
+
+    .badge-sulawe {
+        position: relative;
+
+        &::before {
+            @include background('../images/icono-a.svg', center, contain);
+            @include absolute-center-y;
+            position: absolute;
+            left: -15px;
+            width: 13px;
+            height: 12px;
+            content: '';
         }
     }
 }
 
-.navbar-scroll {
-    // background-color: ;
-    padding: 10px 30px !important;
-    @include transition(ease, 0.3s);
+footer {
+    margin-top: 60px;
+    padding: 30px 0;
 
-    #logo-navbar {
-        width: 60px !important;
+    .social {
+        a {
+            color: $primary;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            border-radius: 50px;
+        }
+
+        .list-inline-item:not(:last-child) {
+            margin-right: 0.1rem;
+        }
     }
 
-    #mburger {
-        // color: !important;
-    }
-}
+    .disclaimer {
+        line-height: 0.9rem;
 
-#mapa {
-    line-height: 0;
-    
-    p {
-        margin: 0;
-        padding: 0;
+        h6 {
+            letter-spacing: 4px;
+        }
+
+        p {
+            margin-bottom: 0;
+
+            small {
+                font-size: 0.775rem;
+            }
+        }
     }
 }
