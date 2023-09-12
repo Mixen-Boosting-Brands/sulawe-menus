@@ -1,0 +1,103 @@
+// Global styles
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    float: left;
+}
+
+.mh-100 {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    @include transition(ease, 0.3s);
+}
+
+.py-60 {
+    padding: 60px 0;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.py-30 {
+    padding: 30px 0;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.whatsapp {
+    @include whatsapp-button;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 15px 30px;
+    // color: ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    @include transition(ease, 0.2s);
+
+    #logo-navbar {
+        width: 100px;
+        @include transition(ease, 0.2s);
+    }
+
+    #mburger {
+        // color: ;
+
+        &:hover,
+        &:focus {
+            // color: ;
+        }
+    }
+}
+
+.navbar-scroll {
+    // background-color: ;
+    padding: 10px 30px !important;
+    @include transition(ease, 0.3s);
+
+    #logo-navbar {
+        width: 60px !important;
+    }
+
+    #mburger {
+        // color: !important;
+    }
+}
+
+#mapa {
+    line-height: 0;
+    
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
