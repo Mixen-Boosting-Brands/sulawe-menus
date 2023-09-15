@@ -3,6 +3,8 @@
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) {
     .head {
+        padding: 0;
+        
         #logo {
             max-width: 60%;
         }
