@@ -19,6 +19,35 @@
 
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
+    .menu {
+        .menu-contenido {
+            nav {
+                ul {
+                    li {
+                        display: inline-block;
+                        
+                        &:after {
+                            position: absolute;
+                            right: -14px;
+                            top: 1px;
+                            content: '/';
+                        }
+                    }
+
+                    li:last-child {
+                        &:after {
+                            display: none;
+                        }
+                    }
+        
+                    .list-inline-item:not(:last-child) {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
     .head {
         #logo {
             max-width: 30%;
