@@ -23,7 +23,7 @@
 @include media-breakpoint-up(md) {
     .menu {
         height: 50vh;
-        
+
         .menu-contenido {
             nav {
                 ul {
@@ -50,6 +50,10 @@
                 }
             }
         }
+    }
+
+    .menu-inferior-border {
+        height: 50vh;
     }
     
     .head {
