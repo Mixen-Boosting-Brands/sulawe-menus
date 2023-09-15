@@ -68,6 +68,12 @@
 // XX-Large devices (larger desktops, 1400px and up)
 @include media-breakpoint-up(xxl) {
     section {
+        .badge-sulawe {    
+            &::before {
+                @include absolute-center-y;
+            }
+        }
+
         .highlight {
             padding: 0px 60px 18px;
         }

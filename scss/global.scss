@@ -155,8 +155,8 @@ section {
 
         &::before {
             @include background('../images/icono-a.svg', center, contain);
-            @include absolute-center-y;
             position: absolute;
+            top: 6px;
             left: -15px;
             width: 13px;
             height: 12px;
