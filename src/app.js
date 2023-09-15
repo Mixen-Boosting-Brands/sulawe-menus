@@ -31,6 +31,7 @@ $(function () {
 $('#mburger').click(function (e) {
     e.stopPropagation();
     $('.menu').toggleClass('menu-abierto');
+    $('.menu-inferior-border').toggleClass('menu-inferior-border-abierto');
     $('#navbar').toggleClass('opacity-0');
     $('#backdrop').toggleClass('backdrop-opacity-1');
 });
@@ -41,6 +42,7 @@ $('.menu').click(function (e) {
 
 $('body,html').click(function (e) {
     $('.menu').removeClass('menu-abierto');
+    $('.menu-inferior-border').removeClass('menu-inferior-border-abierto');
     $('#navbar').removeClass('opacity-0');
     $('#backdrop').removeClass('backdrop-opacity-1');
 });
@@ -56,6 +58,7 @@ document.getElementById("btn-contacto").addEventListener("click", cerrarMenu, fa
 
 function cerrarMenu() {
     $('.menu').removeClass('menu-abierto');
+    $('.menu-inferior-border').removeClass('menu-inferior-border-abierto');
     $('#navbar').removeClass('opacity-0');
     $('#backdrop').removeClass('backdrop-opacity-1');
 }
