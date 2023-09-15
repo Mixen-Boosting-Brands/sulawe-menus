@@ -17,7 +17,105 @@
     <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 <body>
-    <header>
+    <div id="backdrop"></div>
+    <div class="menu">
+        <a id="cerrar-menu" href="javascript:void(0)">
+            <!-- <i class="fas fa-times"></i> -->
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+        <div class="menu-contenido">
+            <a class="anchor" id="btn-logo" href="#">
+                <img class="logo img-fluid" src="./assets/images/logo-grande.png" alt="">
+            </a>
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a id="btn-nav-1" href="/">
+                            <span>01</span> Inicio
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="btn-nav-2" href="./menu-web" target="_blank">
+                            <span>02</span> Menú
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="btn-nav-3" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#opening-hours">
+                            <span>03</span> Horarios
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="btn-nav-4" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#reservations">
+                            <span>04</span> Reservaciones
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="btn-nav-5" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#location">
+                            <span>05</span> Ubicación
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="btn-nav-6" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#about-us">
+                            <span>06</span> Christian Duthoy
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a id="btn-nav-7" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#contact">
+                            <span>07</span> Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="social">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/SulaweMx" style="font-size: 25px;" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/sulawemx/" style="font-size: 25px;" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- div id="contacto-menu">
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="far fa-envelope"></i> <a href="mailto:admin@sulawe.com">admin@sulawe.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i> <a href="tel:+526142502328">(614) 250 2328</a>
+                    </li>
+                </ul>
+            </div -->
+        </div>
+    </div>
+
+    <header id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 my-auto">
+                    <a href="#">
+                        <img id="logo-navbar" class="logo img-fluid" src="./assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-8 my-auto text-end">
+                    <a id="mburger" href="javascript:void(0)">
+                        <!-- <i class="fa-solid fa-bars"></i> -->
+                        <i class="icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="head">
         <div class="container">
             <div class="row mb-3">
                 <div class="col text-center">
@@ -38,7 +136,7 @@
         </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <section>
         <div class="container">
@@ -57,49 +155,49 @@
                                         <p class="bold">Hamachi tatemado</p>
                                     </th>
                                     <td>Aceite de ajonjolí, kosho, chiltepín tostado, ponzu de mostaza picante antigua casera.</td>
-                                    <td>$385.00</td>
+                                    <td class="text-end">$385.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
                                         <p class="bold badge-sulawe">Tataki de Hiramasa</p>
                                     </th>
                                     <td>Aceite de chilhuacle/morita, reducción de soya, cítricos. sal kosher.</td>
-                                    <td>$425.00</td>
+                                    <td class="text-end">$425.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
                                         <p class="bold badge-sulawe">Tartar Atún Azul</p>
                                     </th>
                                     <td>Akami, Chutoro, Otoro, cebollín, perlas de mostaza, shiso, gel de vinagre negro.</td>
-                                    <td>$385.00</td>
+                                    <td class="text-end">$385.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
                                         <p class="bold badge-sulawe">Aguachile Coreano</p>
                                     </th>
                                     <td>Camarón, pulpo, yuzu, gochujang, ari, chiltepín tostado.</td>
-                                    <td>$395.00</td>
+                                     <td class="text-end">$395.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
                                         <p class="bold">Tiradito de filete sellado</p>
                                     </th>
                                     <td>Ponzu de mostaza picante antigua casera, salsa macha-jengibre, perlas de mostaza.</td>
-                                    <td>$495.00</td>
+                                     <td class="text-end">$495.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
                                         <p class="bold badge-sulawe">Tostada de Atún</p>
                                     </th>
                                     <td>Mayo, aguacate, ceviche de atún, fritura de machaca.</td>
-                                    <td>$145.00</td>
+                                     <td class="text-end">$145.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
                                         <p class="bold badge-sulawe">Tostada de Aguachile</p>
                                     </th>
                                     <td>Mayo gochujang, pulpo, camarón, aguachile de chilmole.</td>
-                                    <td>$135.00</td>
+                                     <td class="text-end">$135.00</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -123,52 +221,66 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold">Hamachi tatemado</p>
+                                        <p class="bold">Guacamole asado</p>
                                     </th>
-                                    <td>Aceite de ajonjolí, kosho, chiltepín tostado, ponzu de mostaza picante antigua casera.</td>
-                                    <td>$385.00</td>
+                                    <td>Salsa macha-jengibre, carne seca y machaca frita.</td>
+                                     <td class="text-end">$225.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold badge-sulawe">Tataki de Hiramasa</p>
+                                        <p class="bold badge-sulawe">Jilotes ahumado (elotito baby)</p>
                                     </th>
-                                    <td>Aceite de chilhuacle/morita, reducción de soya, cítricos. sal kosher.</td>
-                                    <td>$425.00</td>
+                                    <td>Mayonesa de ajo negro/miso, mayonesa de serrano con kosho, togarashi, parmesano.</td>
+                                     <td class="text-end">$195.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold badge-sulawe">Tartar Atún Azul</p>
+                                        <p class="bold">Mejillones a la cerveza</p>
                                     </th>
-                                    <td>Akami, Chutoro, Otoro, cebollín, perlas de mostaza, shiso, gel de vinagre negro.</td>
-                                    <td>$385.00</td>
+                                    <td>Mantequilla, albahaca, salsa macha-jengibre, pan sourdough.</td>
+                                     <td class="text-end">$385.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold badge-sulawe">Aguachile Coreano</p>
+                                        <p class="bold">Burrata en salsa ahumada</p>
                                     </th>
-                                    <td>Camarón, pulpo, yuzu, gochujang, ari, chiltepín tostado.</td>
-                                    <td>$395.00</td>
+                                    <td>Tomate ahumado, fritura de machaca, aceite de chilhuacle/morita, pan sourdough.</td>
+                                     <td class="text-end">$235.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold">Tiradito de filete sellado</p>
+                                        <p class="bold">Lechugas asadas</p>
                                     </th>
-                                    <td>Ponzu de mostaza picante antigua casera, salsa macha-jengibre, perlas de mostaza.</td>
-                                    <td>$495.00</td>
+                                    <td>Parmesano, pistache, aderezo cremoso de anchoa.</td>
+                                     <td class="text-end">$275.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold badge-sulawe">Tostada de Atún</p>
+                                        <p class="bold badge-sulawe">Ensalada fresca</p>
                                     </th>
-                                    <td>Mayo, aguacate, ceviche de atún, fritura de machaca.</td>
-                                    <td>$145.00</td>
+                                    <td>Arúgula, espinaca baby, col de bruselas fritas, vinagreta de aguacate/cilantro, queso, pepita.</td>
+                                     <td class="text-end">$225.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold badge-sulawe">Tostada de Aguachile</p>
+                                        <p class="bold">Tuétanos rostizados</p>
                                     </th>
-                                    <td>Mayo gochujang, pulpo, camarón, aguachile de chilmole.</td>
-                                    <td>$135.00</td>
+                                    <td>Mermelada de tocino ahumado, pan sourdough.</td>
+                                     <td class="text-end">$295.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p class="bold">Col rostizada</p>
+                                    </th>
+                                    <td>Glaze de gochujang, mermelada de maracuyá, gochugaru.</td>
+                                     <td class="text-end">$245.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p class="bold">Alubias con Pulpo y Pork Belly</p>
+                                    </th>
+                                    <td>Zarandeado, salsa cremosa de tomate ahumado, parmesano, gochugaru.</td>
+                                     <td class="text-end">$385.00</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -192,55 +304,171 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold">Hamachi tatemado</p>
+                                        <p class="bold">Pulpo zarandeado</p>
                                     </th>
-                                    <td>Aceite de ajonjolí, kosho, chiltepín tostado, ponzu de mostaza picante antigua casera.</td>
-                                    <td>$385.00</td>
+                                    <td>Cítricos, soya, cacahuate, miel de agave.</td>
+                                     <td class="text-end">$495.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold badge-sulawe">Tataki de Hiramasa</p>
+                                        <p class="bold">Camarones zarandeados</p>
                                     </th>
-                                    <td>Aceite de chilhuacle/morita, reducción de soya, cítricos. sal kosher.</td>
-                                    <td>$425.00</td>
+                                    <td>U-12, tártara de eneldo, mantequilla compuesta.</td>
+                                     <td class="text-end">$465.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold badge-sulawe">Tartar Atún Azul</p>
+                                        <p class="bold badge-sulawe">Pesca asada</p>
                                     </th>
-                                    <td>Akami, Chutoro, Otoro, cebollín, perlas de mostaza, shiso, gel de vinagre negro.</td>
-                                    <td>$385.00</td>
+                                    <td>Salsa mornay, aceite de cilantro/eneldo, puré de papa cremoso, espinaca salteada.</td>
+                                     <td class="text-end">$445.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold badge-sulawe">Aguachile Coreano</p>
+                                        <p class="bold">Ribeye Sterling Silver 800 g</p>
                                     </th>
-                                    <td>Camarón, pulpo, yuzu, gochujang, ari, chiltepín tostado.</td>
-                                    <td>$395.00</td>
+                                    <td>Cebolla asada, ajo confitado, papas a la francesa preparadas.</td>
+                                     <td class="text-end">$1530.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold">Tiradito de filete sellado</p>
+                                        <p class="bold badge-sulawe">Ribeye Sterling Silver 400 g</p>
                                     </th>
-                                    <td>Ponzu de mostaza picante antigua casera, salsa macha-jengibre, perlas de mostaza.</td>
-                                    <td>$495.00</td>
+                                    <td>Cebolla asada, ajo confitado, papas a la francesa preparadas.</td>
+                                     <td class="text-end">$810.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold badge-sulawe">Tostada de Atún</p>
+                                        <p class="bold">New York Sterling Silver 600 g</p>
                                     </th>
-                                    <td>Mayo, aguacate, ceviche de atún, fritura de machaca.</td>
-                                    <td>$145.00</td>
+                                    <td>Guacamole, papas a la francesa preparadas.</td>
+                                     <td class="text-end">$960.00</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">
-                                        <p class="bold badge-sulawe">Tostada de Aguachile</p>
+                                        <p class="bold badge-sulawe">Short Rib Bo Ssäm</p>
                                     </th>
-                                    <td>Mayo gochujang, pulpo, camarón, aguachile de chilmole.</td>
-                                    <td>$135.00</td>
+                                    <td>Ahumado, BBQ coreano, encurtidos caseros, arroz japonés, lechuga francesa.</td>
+                                     <td class="text-end">
+                                        $2.95 gramo<br>
+                                        <em>(bajo existencia)</em>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p class="bold badge-sulawe">Filete añejado en Koji</p>
+                                    </th>
+                                    <td>Salsa mantequilla/cerveza, zanahoria baby confitada.</td>
+                                     <td class="text-end">$575.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p class="bold">Pork Belly rostizado</p>
+                                    </th>
+                                    <td>Mole spicy casero, tomate cherry.</td>
+                                     <td class="text-end">$385.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <p class="bold badge-sulawe">Hamburguesa Suláwe</p>
+                                    </th>
+                                    <td>Brioche casero, mayonesa de ajo negro/miso, arugula, tocino ahumado casero, cebolla caramelizada, pepinillo encurtido, perlas de mostaza, papas a la francesa.</td>
+                                     <td class="text-end">$295.00</td>
                                 </tr>
                             </tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0 bold-text">
+                    <h1 class="text-center text-lg-start">Sabores Suláwe</h1>
+                    <h6 class="mb-3 text-center text-lg-start text-capitalize">(Temporada I) Menú degustación $950.00 P/P</h6>
+                    <ul class="list-unstyled lh-lg text-center text-lg-start">
+                        <li>Solo bajo reservación previa.</li>
+                        <li>Pregunta a tu mesero por el menú actualizado.</li>
+                        <li>Incluye solo alimentos.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center text-lg-start">Extras</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <p class="bold">Mole</p>
+                                            </th>
+                                            <td class="text-end">$150.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <p class="bold">Pan Sourdough</p>
+                                            </th>
+                                            <td class="text-end">$70.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <p class="bold">Tuétano preparado</p>
+                                            </th>
+                                            <td class="text-end">$115.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <p class="bold">Carne seca frita 25 g</p>
+                                            </th>
+                                            <td class="text-end">$99.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <p class="bold">Papas a la francesa naturales</p>
+                                            </th>
+                                            <td class="text-end">$99.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <p class="bold">Papas a la francesa preparadas</p>
+                                                <p>Jus de cebolla con vino, parmesano, aceite de ajo confitado.</p>
+                                            </th>
+                                            <td class="text-end">$115.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="highlight white text-center">
+                        <h2 style="top: -38px;">
+                            Suláwe<br>
+                            Corazón de la tierra
+                        </h2>
+                        <ul class="list-unstyled lh-lg" style="top: -12px;">
+                            <li>(Nace de la contracción de las palabras "sulá wee" que significa "corazón de la tierra").</li>
+                            <li>Comida que sale del corazón. Vino que nace de nuestra tierra.</li>
+                            <li>Suláwe es una mezcla de sabores y colores que te llevará a viajar por distintas regiones.</li>
+                            <li>Somos un concepto acogedor que inspira al disfrute y reconocimiento de las bondades de nuestra bella tierra mexicana.</li>
+                            <li>Atrevidas composiciones de ingredientes tradicionales concebidas con creatividad; una amalgama colorida de texturas que sale de lo ordinario, comida hecha con el corazón.</li>
+                        </ul>
                     </div>
                 </div>
             </div>

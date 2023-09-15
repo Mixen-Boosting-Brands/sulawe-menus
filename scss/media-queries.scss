@@ -2,7 +2,7 @@
 
 // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-up(sm) {
-    header {
+    .head {
         #logo {
             max-width: 60%;
         }
@@ -19,7 +19,7 @@
 
 // Medium devices (tablets, 768px and up)
 @include media-breakpoint-up(md) {
-    header {
+    .head {
         #logo {
             max-width: 30%;
         }
@@ -38,5 +38,9 @@
 
 // XX-Large devices (larger desktops, 1400px and up)
 @include media-breakpoint-up(xxl) {
-
+    section {
+        .highlight {
+            padding: 0px 60px 18px;
+        }
+    }
 }
