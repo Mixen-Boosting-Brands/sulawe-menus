@@ -16,6 +16,16 @@
                 left: -20px;
             }
         }
+
+        .highlight.black {
+            .one-line {
+                top: -16px;
+            }
+    
+            .two-lines {
+                top: -16px;
+            }
+        }
     }
 }
 
@@ -65,12 +75,24 @@
 
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
-
+    section {
+        .highlight.black {
+            .two-lines {
+                top: -36px;
+            }
+        }
+    }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @include media-breakpoint-up(xl) {
-
+    section {
+        .highlight.black {
+            .two-lines {
+                top: -19px;
+            }
+        }
+    }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)

@@ -61,6 +61,13 @@ a {
     padding-bottom: 30px;
 }
 
+.flip-h {
+    display: inline-block;
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+}
+
 hr {
     opacity: 1;
 }
@@ -170,6 +177,8 @@ section {
     .highlight {
         border: 1px solid $border-color;
         padding: 0px 30px 18px;
+        width: 100%;
+        float: left;
 
         h1,
         h2,
@@ -182,6 +191,7 @@ section {
         h1,
         h2,
         h3 {
+            display: block;
             top: -38px;
         }
     }
@@ -192,6 +202,14 @@ section {
         h3 {
             background-color: #000000;
             color: #ffffff;
+        }
+
+        .one-line {
+            top: -16px;
+        }
+
+        .two-lines {
+            top: -30px;
         }
     }
 
