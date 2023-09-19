@@ -75,6 +75,10 @@
 
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
+    .head {
+        margin-bottom: 30px;
+    }
+
     section {
         .highlight.black {
             .two-lines {
