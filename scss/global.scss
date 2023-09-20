@@ -20,6 +20,12 @@ body {
     position: relative;
 }
 
+body.no-price {
+    .price {
+        display: none;
+    }
+}
+
 header,
 section,
 footer {
