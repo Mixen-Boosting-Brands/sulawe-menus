@@ -635,6 +635,13 @@
 
     <script src="../../assets/js/app.bundle.js"></script>
 
+    <script>
+        $(function() {
+            var hash = $(location).attr('hash');
+            $('body').addClass(hash);
+        });
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFBMVX5WY1"></script>
     <script>
