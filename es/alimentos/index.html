@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
-<body>
+<body class="add-price">
     <div id="backdrop"></div>
     <div class="menu-container">
         <div class="menu">
@@ -640,7 +640,7 @@
         $(function() {
             var hash = $(location).attr('hash');
             var hashId = hash.substring(1, hash.length);
-            $('body').addClass(hashId);
+            $('body').toggleClass(hashId);
         });
     </script>
 

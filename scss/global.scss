@@ -20,9 +20,15 @@ body {
     position: relative;
 }
 
-body.no-price {
+body.add-price {
     .price {
-        display: none;
+        visibility: visible;
+    }
+}
+
+body.remove-price {
+    .price {
+        visibility: hidden !important;
     }
 }
 
