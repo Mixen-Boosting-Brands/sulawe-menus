@@ -18,6 +18,7 @@ body {
 body {
     font-family: 'moderatcondensedlight', sans-serif;
     position: relative;
+    @include font-size(0.9rem);
 }
 
 body.add-price {
