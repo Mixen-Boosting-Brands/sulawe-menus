@@ -31,22 +31,22 @@
                 <nav>
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a id="btn-nav-1" href="../alimentos/index.html">
+                            <a class="btn-nav" id="btn-nav-1" href="../alimentos/index.html">
                                 <span>01</span> Alimentos
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a id="btn-nav-2" href="../bebidas/index.html">
+                            <a class="btn-nav" id="btn-nav-2" href="../bebidas/index.html">
                                 <span>02</span> Bebidas
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a id="btn-nav-3" href="../vinos/index.html">
+                            <a class="btn-nav" id="btn-nav-3" href="../vinos/index.html">
                                 <span>03</span> Vinos
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a id="btn-nav-4" href="../licores/index.html">
+                            <a class="btn-nav" id="btn-nav-4" href="../licores/index.html">
                                 <span>04</span> Licores
                             </a>
                         </li>
@@ -899,6 +899,14 @@
             var hash = $(location).attr('hash');
             var hashId = hash.substring(1, hash.length);
             $('body').toggleClass(hashId);
+        });
+
+        $( document ).ready(function() {
+            if ($('body').hasClass("remove-price")) {
+                $(".btn-nav").click(function(e) {
+                    $(this).attr('href', $(this).attr('href') + "#remove-price"); 
+                });
+            }
         });
     </script>
 
