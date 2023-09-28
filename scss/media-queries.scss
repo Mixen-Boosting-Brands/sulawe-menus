@@ -75,6 +75,10 @@
 
 // Large devices (desktops, 992px and up)
 @include media-breakpoint-up(lg) {
+    body {
+        font-family: 'moderatcondensedlight', sans-serif;
+    }
+
     .head {
         margin-bottom: 30px;
     }

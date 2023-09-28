@@ -16,7 +16,7 @@ body {
 }
 
 body {
-    font-family: 'moderatcondensedlight', sans-serif;
+    font-family: 'moderatcondensedthin', sans-serif;
     position: relative;
     @include font-size(0.84rem);
 }
@@ -175,7 +175,7 @@ section {
     }
 
     .bold {
-        font-family: 'moderatcondensedregular', sans-serif;
+        font-family: 'moderatcondensedregular', sans-serif !important;
     }
 
     .badge-sulawe {
