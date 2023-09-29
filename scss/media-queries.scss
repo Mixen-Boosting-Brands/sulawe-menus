@@ -108,7 +108,8 @@
     section {
         .badge-sulawe {    
             &::before {
-                @include absolute-center-y;
+                // @include absolute-center-y;
+                top: 11px;
             }
         }
 
