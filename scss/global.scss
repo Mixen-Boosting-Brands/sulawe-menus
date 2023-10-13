@@ -132,6 +132,7 @@ h6 {
 
     #logo-navbar {
         width: 145px;
+        opacity: 0;
         @include transition(ease, 0.2s);
     }
 
@@ -146,6 +147,10 @@ h6 {
     -webkit-backdrop-filter: saturate(300%) blur(5px);
             backdrop-filter: saturate(300%) blur(5px);
     border-bottom: 1px solid $border-color;
+
+    #logo-navbar {
+        opacity: 1 !important;
+    }
 }
 
 .head {
