@@ -5,6 +5,7 @@ window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 import '../src/smooth-scrolling';
 import '../src/form-ajax';
 import '../src/aos';
+import '../src/cookies';
 
 // Header
 $(function () {

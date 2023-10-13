@@ -31,22 +31,22 @@
                 <nav>
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a class="btn-nav" id="btn-nav-1" href="../alimentos/index.html">
+                            <a class="btn-nav" id="btn-nav-1" href="../alimentos">
                                 <span>01</span> Alimentos
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="btn-nav" id="btn-nav-2" href="../bebidas/index.html">
+                            <a class="btn-nav" id="btn-nav-2" href="../bebidas">
                                 <span>02</span> Bebidas
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="btn-nav" id="btn-nav-3" href="../vinos/index.html">
+                            <a class="btn-nav" id="btn-nav-3" href="../vinos">
                                 <span>03</span> Vinos
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="btn-nav" id="btn-nav-4" href="../licores/index.html">
+                            <a class="btn-nav" id="btn-nav-4" href="../licores">
                                 <span>04</span> Licores
                             </a>
                         </li>
@@ -1853,22 +1853,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../assets/js/app.bundle.js"></script>
-
-    <script>
-        $(function() {
-            var hash = $(location).attr('hash');
-            var hashId = hash.substring(1, hash.length);
-            $('body').toggleClass(hashId);
-        });
-
-        $( document ).ready(function() {
-            if ($('body').hasClass("remove-price")) {
-                $(".btn-nav").click(function(e) {
-                    $(this).attr('href', $(this).attr('href') + "#remove-price"); 
-                });
-            }
-        });
-    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFBMVX5WY1"></script>
