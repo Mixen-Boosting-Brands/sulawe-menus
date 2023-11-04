@@ -136,7 +136,8 @@ h6 {
         @include transition(ease, 0.2s);
     }
 
-    #mburger {
+    #mburger,
+    #back {
         color: $font-color;
         font-size: 2rem;
     }
