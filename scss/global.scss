@@ -119,6 +119,17 @@ h6 {
     }
 }
 
+.btn-secondary {
+    color: $primary;
+}
+
+.btn-sm {
+    --bs-btn-padding-y: 0;
+    --bs-btn-padding-x: .5rem;
+    vertical-align: inherit;
+    @include font-size(0.84rem);
+}
+
 #navbar {
     width: 100%;
     height: auto;
@@ -173,7 +184,7 @@ section {
 
     h1,
     h2 {
-        letter-spacing: 0.8rem;
+        letter-spacing: 0.7rem;
     }
 
     .table-responsive {
